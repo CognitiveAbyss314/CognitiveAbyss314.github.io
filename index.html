@@ -1,64 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Image Gallery</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cognitive Abyss — Official Links</title>
+
 <style>
-.gallery {
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
-justify-content: center;
-}
-.gallery-item {
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #111;
+color: #f5f5f5;
+margin: 0;
+padding: 20px;
 text-align: center;
-max-width: 220px;
 }
-.gallery-item img {
+
+h1 {
+font-size: 2rem;
+margin-bottom: 30px;
+}
+
+.image-grid {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 50px;
+margin-bottom: 50px;
+}
+
+.item {
+width: 280px;
+}
+
+.item img {
 width: 100%;
-height: auto;
-border: 1px solid #ccc;
-border-radius: 8px;
+border-radius: 14px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
 }
+
+.item img:hover {
+transform: scale(1.06);
+box-shadow: 0 0 25px rgba(255, 255, 255, 0.55);
+}
+
 .caption {
-margin-top: 8px;
-font-size: 14px;
-color: #333;
+margin-top: 12px;
+font-size: 1rem;
+font-weight: bold;
+color: #e6e6e6;
+}
+
+.definitions-box {
+max-width: 850px;
+margin: 0 auto;
+padding: 25px;
+border: 2px solid #888;
+border-radius: 14px;
+background: rgba(255, 255, 255, 0.05);
+text-align: left;
+font-size: 1.05rem;
+line-height: 1.5;
+}
+
+.definitions-box h2 {
+text-align: center;
+margin-bottom: 20px;
+font-size: 1.4rem;
 }
 </style>
 </head>
+
 <body>
-<div class="gallery">
-<div class="gallery-item">
+
+<h1>Welcome to the Cognitive Abyss</h1>
+
+<div class="image-grid">
+
+<!-- MINDCAST SONG IMAGE -->
+<div class="item">
 <a href="https://suno.com/s/4jrS7rwHAYtMb2Xm" target="_blank">
-<img src="https://github.com/CognitiveAbyss314/CognitiveAbyss314.github.io/raw/main/IMG_8528%20(1).jpg" alt="Mindcast concert photo">
+<img src="IMG_8528.jpg" alt="Mindcast Concert — Listen to the Song" />
 </a>
-<div class="caption">Mindcast: Don’t let it disappear- the concert photo</div>
+<div class="caption">Click this image to hear the Mindcast song</div>
 </div>
-<div class="gallery-item">
-<img src="https://github.com/CognitiveAbyss314/CognitiveAbyss314.github.io/raw/main/IMG_8443%20(1).jpg" alt="Wired Magazine">
-<div class="caption">Streaming your inner life; why let thoughts disappear, when they can pay your rent?</div>
-</div>
-<div class="gallery-item">
-<img src="https://github.com/CognitiveAbyss314/CognitiveAbyss314.github.io/raw/main/IMG_8466%20(1).jpg" alt="AI Addiction meeting">
-<div class="caption">AI addiction 12 step program meetings</div>
-</div>
-<div class="gallery-item">
+
+<!-- BOOK COVER IMAGE -->
+<div class="item">
 <a href="https://www.facebook.com/share/1ALypUK7g1/?mibextid=wwXIfr" target="_blank">
-<img src="https://github.com/CognitiveAbyss314/CognitiveAbyss314.github.io/raw/main/IMG_8311.jpg" alt="Book front cover">
+<img src="IMG_8311.jpg" alt="Cognitive Abyss Book Cover" />
 </a>
-<div class="caption">Into the Cognitive Abyss - front cover; available on Amazon</div>
+<div class="caption">Click this image to visit the author’s Facebook page</div>
 </div>
-<div class="gallery-item">
-<a href="https://www.facebook.com/share/1ALypUK7g1/?mibextid=wwXIfr" target="_blank">
-<img src="https://github.com/CognitiveAbyss314/CognitiveAbyss314.github.io/raw/main/IMG_8385.jpg" alt="Book back cover">
-</a>
-<div class="caption">Back cover: fictitious quotes from fictitious people in fictitious publications</div>
+
 </div>
-<div class="gallery-item">
-<img src="https://github.com/CognitiveAbyss314/CognitiveAbyss314.github.io/raw/main/IMG_8441.PNG" alt="Killer App">
-<div class="caption">Killer App: the phone app that turns your phone into a lethal weapon</div>
+
+<div class="definitions-box">
+<h2>Concepts From the Book Cover</h2>
+
+<p><strong>Synthetic Oblivion:</strong> A drug of forgetting; produced not by chemistry, but by endless digital feeds that drown memory in infinite novelty.</p>
+
+<p><strong>Cybernetic Yearning:</strong> Desire shaped by feedback loops; wanting only what is most ‘liked’, clicked, viewed, followed, and optimized; and therefore the least authentic.</p>
+
+<p><strong>Prosthetic Consciousness:</strong> Author Marshall McLuhan foresaw the electronic medium as an extension of human nervous systems, but what has emerged in the early 21st Century is a prosthetic consciousness; owned, curated, and manipulated by the very few.</p>
+
+<p><strong>Cognitive Abyss:</strong> The vertigo of realizing that thought itself is derivative, assembled from fragments of algorithmically surfaced content.</p>
+
 </div>
-</div>
+
 </body>
 </html>
+Update index.html with corrected definitions and clickable images
